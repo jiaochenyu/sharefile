@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文件名"/>
+    <TextView
+        android:id="@+id/time"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="上传时间：2015-4-8"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/url"
+        android:layout_toLeftOf="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/file_name"
+        android:text="url"/>
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:layout_alignBottom="@+id/url"
+        android:text="下载次数：1"/>
+
+
+</RelativeLayout>
